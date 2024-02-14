@@ -7,9 +7,6 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
-// const prev = document.querySelector(".player__button");
-// const next = document.querySelector(".player__button");
-
 ranges.forEach(range => {
 	range.addEventListener("input", () => {
 		if(range.name === "volume"){
@@ -41,6 +38,8 @@ toggle.addEventListener("click", () => {
 });
 
 
+// const prev = document.querySelector(".player__button");
+// const next = document.querySelector(".player__button");
 
 // next.addEventListener("click", () => {
 //     if (video.currentTime + 2 <= video.duration) {
